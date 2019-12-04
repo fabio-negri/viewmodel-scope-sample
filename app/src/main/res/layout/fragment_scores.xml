@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/playerOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:autoSizeMaxTextSize="44sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/lblPlayerOne"
+        app:layout_constraintEnd_toStartOf="@id/playerTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="3" />
+
+    <TextView
+        android:id="@+id/playerTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:autoSizeMaxTextSize="44sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@id/lblPlayerTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/playerOne"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="2" />
+
+    <TextView
+        android:id="@+id/lblPlayerOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Player 1"
+        app:autoSizeMaxTextSize="18sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/lblPlayerTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playerOne" />
+
+    <TextView
+        android:id="@+id/lblPlayerTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Player 2"
+        app:autoSizeMaxTextSize="18sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lblPlayerOne"
+        app:layout_constraintTop_toBottomOf="@id/playerTwo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
